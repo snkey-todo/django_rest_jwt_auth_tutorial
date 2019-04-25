@@ -195,5 +195,7 @@ SWAGGER_SETTINGS = {
     'JSON_EDITOR': True,
 }
 
+REST_USE_JWT = True
+
 LOGIN_URL = 'rest_framework:login'
 LOGOUT_URL = 'rest_framework:logout'

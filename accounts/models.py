@@ -11,5 +11,5 @@ class MyProfile(models.Model):
     is_developer = models.BooleanField(default=True)    # 开发者
     is_custom_user = models.BooleanField(default=False) # 普通用户
 
-    def __str__(self):  # Python 3: def __str__(self):
-        return self.user.username  
+    def __str__(self):
+        return self.user.__str__()
